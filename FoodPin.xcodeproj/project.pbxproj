@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3C61B11BF4702B000F65D7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C61B01BF4702B000F65D7 /* CustomTableViewCell.swift */; };
 		2E8FDE4E1BB8132800EDA6AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FDE4D1BB8132800EDA6AF /* AppDelegate.swift */; };
 		2E8FDE501BB8132800EDA6AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FDE4F1BB8132800EDA6AF /* ViewController.swift */; };
 		2E8FDE531BB8132800EDA6AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8FDE511BB8132800EDA6AF /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		2E8FDE581BB8132800EDA6AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8FDE561BB8132800EDA6AF /* LaunchScreen.storyboard */; };
 		2E8FDE631BB8132800EDA6AF /* FoodPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FDE621BB8132800EDA6AF /* FoodPinTests.swift */; };
 		2E8FDE6E1BB8132800EDA6AF /* FoodPinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FDE6D1BB8132800EDA6AF /* FoodPinUITests.swift */; };
+		2E8FDE7C1BB81C0400EDA6AF /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FDE7B1BB81C0400EDA6AF /* RestaurantTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E3C61B01BF4702B000F65D7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2E8FDE4A1BB8132800EDA6AF /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8FDE4D1BB8132800EDA6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E8FDE4F1BB8132800EDA6AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		2E8FDE691BB8132800EDA6AF /* FoodPinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8FDE6D1BB8132800EDA6AF /* FoodPinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinUITests.swift; sourceTree = "<group>"; };
 		2E8FDE6F1BB8132800EDA6AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8FDE7B1BB81C0400EDA6AF /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				2E8FDE541BB8132800EDA6AF /* Assets.xcassets */,
 				2E8FDE561BB8132800EDA6AF /* LaunchScreen.storyboard */,
 				2E8FDE591BB8132800EDA6AF /* Info.plist */,
+				2E8FDE7B1BB81C0400EDA6AF /* RestaurantTableViewController.swift */,
+				2E3C61B01BF4702B000F65D7 /* CustomTableViewCell.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -193,15 +199,18 @@
 					2E8FDE491BB8132800EDA6AF = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = RKKEABE9CR;
+						LastSwiftMigration = 0810;
 					};
 					2E8FDE5D1BB8132800EDA6AF = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = RKKEABE9CR;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2E8FDE491BB8132800EDA6AF;
 					};
 					2E8FDE681BB8132800EDA6AF = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = RKKEABE9CR;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2E8FDE491BB8132800EDA6AF;
 					};
 				};
@@ -260,6 +269,8 @@
 			files = (
 				2E8FDE501BB8132800EDA6AF /* ViewController.swift in Sources */,
 				2E8FDE4E1BB8132800EDA6AF /* AppDelegate.swift in Sources */,
+				2E3C61B11BF4702B000F65D7 /* CustomTableViewCell.swift in Sources */,
+				2E8FDE7C1BB81C0400EDA6AF /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yashtrivedi.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yashtrivedi.FoodPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yashtrivedi.FoodPinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodPin.app/FoodPin";
 			};
 			name = Debug;
@@ -437,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yashtrivedi.FoodPinTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodPin.app/FoodPin";
 			};
 			name = Release;
@@ -448,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yashtrivedi.FoodPinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FoodPin;
 				USES_XCTRUNNER = YES;
 			};
@@ -460,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.yashtrivedi.FoodPinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FoodPin;
 				USES_XCTRUNNER = YES;
 			};
@@ -484,6 +501,7 @@
 				2E8FDE741BB8132800EDA6AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E8FDE751BB8132800EDA6AF /* Build configuration list for PBXNativeTarget "FoodPinTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +510,7 @@
 				2E8FDE771BB8132800EDA6AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E8FDE781BB8132800EDA6AF /* Build configuration list for PBXNativeTarget "FoodPinUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +519,7 @@
 				2E8FDE7A1BB8132800EDA6AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
